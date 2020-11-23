@@ -1,2 +1,24 @@
 <h1>PORTFOLIO PROJECTS</h1>
-<hr style="margin: 0 30em;">
+<hr>
+
+<mat-grid-list cols="3"  style="margin: 0 2em;" gutterSize="1em" >
+  <div *ngFor="let project of projects">
+    <mat-grid-tile>
+      <mat-card>
+        <mat-card-header>
+          <mat-card-title>{{ project.name }}</mat-card-title>
+          <mat-card-subtitle>{{project.tech }}</mat-card-subtitle>
+        </mat-card-header>
+        <mat-card-content>
+          <p>
+            {{project.description}}
+          </p>
+        </mat-card-content>
+        <mat-card-actions>
+          <button mat-button>READ MORE</button>
+        </mat-card-actions>
+      </mat-card>
+    </mat-grid-tile>
+  </div>
+  
+</mat-grid-list>
