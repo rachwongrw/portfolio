@@ -17,3 +17,6 @@
 
 <a name="classdiagram"></a>
 ## Class diagram
+
+## Inspiration 
+[CollectedUI / Dribbble](https://dribbble.com/shots/2517640-Portfolio-Personal-Vcard/attachments/496161)
