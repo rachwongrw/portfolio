@@ -1,0 +1,31 @@
+.heading {
+  position: relative;
+  display: inline-block;
+  margin: auto;
+
+  &::after {
+    content: " ";
+    width: 50%;
+    height: 1px;
+    background: black;
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    transition: .2s ease-in;
+  }
+
+  &:hover::after {
+    width: 100%;
+    // background: #f6e6eb;
+
+    // h1 .heading {
+    //   color: #f6e6eb;
+    // }
+    
+  }
+}
+
+.h1-wrapper {
+  display: flex;
+}
