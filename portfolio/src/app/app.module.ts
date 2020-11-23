@@ -13,6 +13,7 @@ import { MatSliderModule } from '@angular/material/slider';
 import {MatCardModule} from '@angular/material/card';
 import {MatGridListModule} from '@angular/material/grid-list';
 import { FooterComponent } from './footer/footer.component';
+import {MatIconModule} from '@angular/material/icon';
 
 
 
@@ -31,7 +32,8 @@ import { FooterComponent } from './footer/footer.component';
     BrowserAnimationsModule,
     MatSliderModule,
     MatCardModule,
-    MatGridListModule
+    MatGridListModule,
+    MatIconModule
   ],
   providers: [],
   bootstrap: [AppComponent]
