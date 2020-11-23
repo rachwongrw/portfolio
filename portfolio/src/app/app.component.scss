@@ -11,3 +11,12 @@
 .mat-card-header-text {
   margin: 0 !important;
 }
+
+.front-pg-wrapper {
+  height: 100vh;
+  background-image: 
+    linear-gradient(#f6e6eb, #f6e6eb),
+    linear-gradient(#ffffff,#ffffff);
+  background-size: calc(1 * (100% / 3)) 100%;
+  background-repeat:no-repeat;
+}
