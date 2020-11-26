@@ -1,7 +1,5 @@
 
 .about-wrap {
-  display: table;
-  height: 90%;
   margin-left: auto;
   margin-right: 4em;
 }
@@ -9,9 +7,7 @@
 .about {
   max-width: 30em;
   box-shadow: 0 0 black;
-  line-height: 2.3em; 
-  display: table-cell;
-  vertical-align: middle;
+  line-height: 2.3em;
 }
 
 
@@ -35,9 +31,7 @@
 }
 
 .contact {
-  max-width: 10em;
-  margin-top: -10em;
-  margin-left: 2em;
+  margin-top: auto;
 }
 
 a {
