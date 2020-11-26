@@ -9,34 +9,34 @@
     -moz-osx-font-smoothing: grayscale;
   }
 </style>
-  <div class="front-pg-wrapper">
+<div class="front-pg-wrapper">
     <app-header></app-header>
     <mat-grid-list cols="10" rowHeight="90vh">
         <!-- CONTACT -->
         <mat-grid-tile [colspan]="2" style="display: flex; flex-direction: column; flex: 1;">
             <div class="contact">
                 <div>
-                  <mat-icon aria-hidden="false" aria-label="Example home icon">location_on
-                  </mat-icon>
-                  Vancouver, CA
+                    <mat-icon aria-hidden="false" aria-label="Example home icon">location_on
+                    </mat-icon>
+                    Vancouver, CA
                 </div>
                 <div>
-                  <b>Email</b><br>
-                  <a target="_blank" href="mailto:rwrachelwong@gmail.com">rwrachelwong@gmail.com</a>
+                    <b>Email</b><br>
+                    <a target="_blank" href="mailto:rwrachelwong@gmail.com">rwrachelwong@gmail.com</a>
                 </div>
                 <div>
-                  <b>LinkedIn</b><br>
-                  <a target="_blank" href="https://www.linkedin.com/in/rwongy/">linkedin.com/in/rwongy</a>
-                  
+                    <b>LinkedIn</b><br>
+                    <a target="_blank" href="https://www.linkedin.com/in/rwongy/">linkedin.com/in/rwongy</a>
+                    
                 </div>
-              </div>
+                </div>
         </mat-grid-tile>
-      
+        
         <!-- ABOUT IMG -->
         <mat-grid-tile [colspan]="4">
-            <img src="../assets/images/placeholder-portrait.jpg" alt="portrait" width="400">
+            <img src="../assets/images/placeholder-portrait.jpg" alt="portrait" class="about-img">
         </mat-grid-tile>
-      
+        
 
         <!-- ABOUT ME -->
         <mat-grid-tile [colspan]="4">
@@ -58,17 +58,10 @@
             </div>
         </mat-grid-tile>
     </mat-grid-list>
-    
-   
-    
-   
-
-  </div>
-
-
-  <app-competencies></app-competencies>
-  <app-projects></app-projects>
-  <app-footer></app-footer>
+</div>
+<app-competencies></app-competencies>
+<app-projects></app-projects>
+<app-footer></app-footer>
 
 
 <router-outlet></router-outlet>
