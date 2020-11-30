@@ -2,24 +2,26 @@
   <h1 class="heading">PORTFOLIO PROJECTS</h1>
 </div>
 
-<mat-grid-list cols="3"  style="margin: 0 2em;" gutterSize="1em" >
+<mat-grid-list cols="3"  style="margin: 0 2em;" gutterSize="0.7em" >
   <div *ngFor="let project of projectsList">
     <mat-grid-tile>
       <mat-card>
         <mat-card-header>
           <mat-card-title>{{ project.name }}</mat-card-title>
-          <mat-card-subtitle>{{project.tech }}</mat-card-subtitle>
+          <mat-card-subtitle>{{ project.tech }}</mat-card-subtitle>
         </mat-card-header>
+        <img mat-card-image [src]="project.img" alt="project-screenshot" width="100">
         <mat-card-content>
-          <p>
-            {{project.description}}
-          </p>
+          <p> {{ project.description }} </p>
         </mat-card-content>
+        
         <mat-card-actions>
-          <button mat-button>READ MORE</button>
-        </mat-card-actions>
+          <!-- <a [routerLink]="[/1']"> -->
+           <button mat-button>READ MORE</button>
+          <!-- </a> -->
+          
+       </mat-card-actions>
       </mat-card>
     </mat-grid-tile>
   </div>
-  
 </mat-grid-list>
