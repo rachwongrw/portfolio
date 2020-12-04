@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute, Router } from '@angular/router';
+import { Project } from '../projects/project.model';
+import { ProjectService } from '../service/project.service';
 
 @Component({
   selector: 'app-project-detail',
@@ -6,10 +9,20 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./project-detail.component.scss']
 })
 export class ProjectDetailComponent implements OnInit {
+  constructor(private activatedRoute: ActivatedRoute, private router: Router, private projectService: ProjectService) { }
 
-  constructor() { }
+  sub;
+  id;
+  project: Project;
 
   ngOnInit(): void {
+    this.sub = this.activatedRoute.paramMap.subscribe(params => {
+      this.id = +params.get('id');
+     
+      let projects = this.projectService.getProjects();
+      this.project = projects.find(p => p.id === this.id)
+      console.log("this.id", this.id, "project:", this.project)
+    })
   }
 
 }

@@ -6,17 +6,16 @@ import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
 import { CompetenciesComponent } from './competencies/competencies.component';
 import { ProjectsComponent } from './projects/projects.component';
-// --------------------- MATERIAL ---------------------
-import {Component} from '@angular/core';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { MatSliderModule } from '@angular/material/slider';
-import {MatCardModule} from '@angular/material/card';
-import {MatGridListModule} from '@angular/material/grid-list';
-import { FooterComponent } from './footer/footer.component';
-import {MatIconModule} from '@angular/material/icon';
 import { IndexComponent } from './index/index.component';
 import { ProjectDetailComponent } from './project-detail/project-detail.component';
 
+// --------------------- MATERIAL ---------------------
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MatSliderModule } from '@angular/material/slider';
+import { MatCardModule } from '@angular/material/card';
+import { MatGridListModule } from '@angular/material/grid-list';
+import { FooterComponent } from './footer/footer.component';
+import { MatIconModule } from '@angular/material/icon';
 
 
 @NgModule({
@@ -32,7 +31,6 @@ import { ProjectDetailComponent } from './project-detail/project-detail.componen
   imports: [
     BrowserModule,
     AppRoutingModule,
-    // Component,
     BrowserAnimationsModule,
     MatSliderModule,
     MatCardModule,
