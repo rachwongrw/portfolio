@@ -14,6 +14,8 @@ import {MatCardModule} from '@angular/material/card';
 import {MatGridListModule} from '@angular/material/grid-list';
 import { FooterComponent } from './footer/footer.component';
 import {MatIconModule} from '@angular/material/icon';
+import { IndexComponent } from './index/index.component';
+import { ProjectDetailComponent } from './project-detail/project-detail.component';
 
 
 
@@ -23,7 +25,9 @@ import {MatIconModule} from '@angular/material/icon';
     HeaderComponent,
     CompetenciesComponent,
     ProjectsComponent,
-    FooterComponent
+    FooterComponent,
+    IndexComponent,
+    ProjectDetailComponent
   ],
   imports: [
     BrowserModule,
