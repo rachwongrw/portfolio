@@ -1,9 +1,13 @@
 <app-header></app-header>
-<mat-grid-list cols="10" rowHeight="90vh">
+<mat-grid-list cols="10" rowHeight="90vh" style="margin: 0 2em;"  gutterSize="1em">
   <mat-grid-tile [colspan]="4" >
     <img alt="project" [src]="project.img" style="width: 100%;"/>
   </mat-grid-tile>
-  <mat-grid-tile [colspan]="6" >
-    <p>{{ project.description }}</p>
+  <mat-grid-tile [colspan]="6">
+    <mat-card style="width: 70%;">
+      <mat-card-content>
+        <p> {{ project.description }} </p>
+      </mat-card-content>
+    </mat-card>
   </mat-grid-tile>
 </mat-grid-list>
