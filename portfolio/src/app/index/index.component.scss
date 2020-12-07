@@ -10,6 +10,9 @@
   line-height: 2.3em;
 }
 
+a {
+  font-weight: 200;
+}
 
 .mat-card-header-text {
   margin: 0 !important;
@@ -32,11 +35,6 @@
 
 .contact {
   margin-top: auto;
-}
-
-a {
-  text-decoration: none;
-  color: inherit;
 }
 
 .about-img {

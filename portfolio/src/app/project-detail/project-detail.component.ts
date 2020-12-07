@@ -21,6 +21,8 @@ export class ProjectDetailComponent implements OnInit {
      
       let projects = this.projectService.getProjects();
       this.project = projects.find(p => p.id === this.id)
+      // var techList = this.project.tech.split(",").join(" | ")
+      // this.project.tech = techList
       console.log("this.id", this.id, "project:", this.project)
     })
   }
