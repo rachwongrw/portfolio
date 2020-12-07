@@ -36,11 +36,12 @@
         </mat-grid-tile>
         
         <!-- ABOUT IMG -->
-        <mat-grid-tile [colspan]="4">
-            <img src="../assets/images/placeholder-portrait.jpg" alt="portrait" class="about-img">
-        </mat-grid-tile>
-        
-
+        <ng-container *ngIf="isWideScreen$ | async">
+            <mat-grid-tile [colspan]="4">
+                <img src="../assets/images/placeholder-portrait.jpg" alt="portrait" class="about-img">
+            </mat-grid-tile>
+        </ng-container>
+    
         <!-- ABOUT ME -->
         <mat-grid-tile [colspan]="4">
             <div class="about-wrap">
