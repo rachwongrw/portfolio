@@ -11,9 +11,19 @@
 </style>
 <div class="front-pg-wrapper">
     <app-header></app-header>
-    <mat-grid-list cols="10" rowHeight="90vh">
+    <div class="row my-4" style="height: 90vh;">
         <!-- CONTACT -->
-        <mat-grid-tile [colspan]="2" style="display: flex; flex-direction: column; flex: 1;">
+        <!-- <div class="col-lg-3 col-md-6">
+            hello
+        </div>
+        <div class="col-lg-3 col-md-6">
+            2
+        </div>
+        <div class="col-lg-3 col-md-6">
+            3
+            
+        </div> -->
+        <div style="display: flex; flex-direction: column; flex: 1; padding-left: 2em;" class="col-lg-2 col-md-6">
             <div class="contact">
                 <div>
                     <p>
@@ -32,18 +42,16 @@
                     <a target="_blank" href="https://www.linkedin.com/in/rwongy/">linkedin.com/in/rwongy</a>
                     </p>
                 </div>
-                </div>
-        </mat-grid-tile>
+            </div>
+        </div>
         
         <!-- ABOUT IMG -->
-        <ng-container *ngIf="isWideScreen$ | async">
-            <mat-grid-tile [colspan]="4">
-                <img src="../assets/images/placeholder-portrait.jpg" alt="portrait" class="about-img">
-            </mat-grid-tile>
-        </ng-container>
+        <div class="col-lg-4 col-md-6">
+            <img src="../assets/images/placeholder-portrait.jpg" alt="portrait" class="about-img">
+        </div>
     
         <!-- ABOUT ME -->
-        <mat-grid-tile [colspan]="4">
+        <div class="col-lg-6 col-md-12">
             <div class="about-wrap">
                 <mat-card class="about">
                 <mat-card-header>
@@ -60,8 +68,8 @@
                 </mat-card-content>
                 </mat-card>
             </div>
-        </mat-grid-tile>
-    </mat-grid-list>
+        </div>
+    </div>
 </div>
 <app-competencies></app-competencies>
 <app-projects></app-projects>  
