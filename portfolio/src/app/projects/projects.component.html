@@ -2,26 +2,23 @@
   <h1 class="heading">PORTFOLIO PROJECTS</h1>
 </div>
 
-<!-- <div class="row my-4" style="height: 90vh;"> -->
-  <div *ngFor="let project of projectsList">
-    <mat-grid-tile>
-      <mat-card style="width: 90%;">
-        <mat-card-header>
-          <mat-card-title>{{ project.name }}</mat-card-title>
-          <mat-card-subtitle>{{ project.tech }}</mat-card-subtitle>
-        </mat-card-header>
-        <img mat-card-image [src]="project.img" alt="project-screenshot" width="100">
-        <mat-card-content>
-          <p style="white-space: pre-line;"> {{ project.description }} </p>
-        </mat-card-content>
-        
-        <mat-card-actions>
-          <a [routerLink]="['/project', project.id]">
-           <button mat-button>READ MORE</button>
-          </a>
-          
-       </mat-card-actions>
-      </mat-card>
-    </mat-grid-tile>
+<div class="row my-4" style="height: 90vh;">
+  <div *ngFor="let project of projectsList" class="col-md-4">
+    <mat-card>
+      <mat-card-header>
+        <mat-card-title>{{ project.name }}</mat-card-title>
+        <mat-card-subtitle>{{ project.tech }}</mat-card-subtitle>
+      </mat-card-header>
+      <img mat-card-image [src]="project.img" alt="project-screenshot" width="100">
+      <mat-card-content>
+        <p style="white-space: pre-line;"> {{ project.description }} </p>
+      </mat-card-content>
+      
+      <mat-card-actions>
+        <a [routerLink]="['/project', project.id]">
+          <button mat-button>READ MORE</button>
+        </a>
+     </mat-card-actions>
+    </mat-card>
   </div>
-<!-- </div> -->
+</div>
