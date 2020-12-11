@@ -2,7 +2,8 @@
   position: relative;
   display: inline-block;
   margin: 0.67em auto;
-
+  letter-spacing: 0.3em;
+  
   &::after {
     content: " ";
     width: 50%;

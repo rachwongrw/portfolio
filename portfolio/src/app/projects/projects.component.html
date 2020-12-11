@@ -2,16 +2,19 @@
   <h1 class="heading">PORTFOLIO PROJECTS</h1>
 </div>
 
-<div class="row my-4" style="height: 90vh;">
-  <div *ngFor="let project of projectsList" class="col-md-4">
-    <mat-card>
+<div class="row my-4 mx-0">
+  <div *ngFor="let project of projectsList" class="col-md-4 my-2">
+    <mat-card style="height: 100%">
       <mat-card-header>
         <mat-card-title>{{ project.name }}</mat-card-title>
         <mat-card-subtitle>{{ project.tech }}</mat-card-subtitle>
       </mat-card-header>
       <img mat-card-image [src]="project.img" alt="project-screenshot" width="100">
       <mat-card-content>
-        <p style="white-space: pre-line;"> {{ project.description }} </p>
+        <p style="white-space: pre-line;" *ngIf="project.description.length < 200; else condensed"> {{ project.description }} </p>
+        <ng-template #condensed>
+          {{ project.description.slice(0, 200) }}...
+      </ng-template>
       </mat-card-content>
       
       <mat-card-actions>
