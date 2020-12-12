@@ -12,7 +12,32 @@
 <div class="front-pg-wrapper">
     <app-header></app-header>
 
-    <div class="row my-4 mx-0" style="height: 90vh;">
+    <div class="row my-4 mx-0 flex-sm-row-reverse" style="height: 90vh;">
+
+      <!-- ABOUT ME -->
+      <div class="col-lg-6 col-md-12">
+        <div class="about-wrap">
+          <mat-card class="about">
+            <mat-card-header>
+              <mat-card-title>RACHEL WONG</mat-card-title>
+              <mat-card-subtitle style="letter-spacing: 0.1em;">Front End/Full Stack Developer</mat-card-subtitle>
+            </mat-card-header>
+            <mat-card-content>
+              <p>
+              I'm a passionate front end focused full stack developer with consulting experience, building web applications for many clients in various programming languages. 
+              </p>
+              <p>
+              I predominantly focus on React, JavaScript, Node, AWS, MongoDB and serverless. I love writing clean code and approach learning with an open and curious mind.
+              </p>
+            </mat-card-content>
+          </mat-card>
+        </div>
+      </div>
+
+      <!-- ABOUT IMG -->
+      <div class="col-lg-4 col-md-6">
+        <img src="../assets/images/placeholder-portrait.jpg" alt="portrait" class="about-img d-none d-lg-block d-md-block">
+      </div>
 
       <!-- CONTACT -->
       <div class="col-lg-2 col-md-6 contact-wrapper">
@@ -36,32 +61,7 @@
           </div>
         </div>
       </div>
-        
-      <!-- ABOUT IMG -->
-      <div class="col-lg-4 col-md-6">
-          <img src="../assets/images/placeholder-portrait.jpg" alt="portrait" class="about-img">
-      </div>
-  
-      <!-- ABOUT ME -->
-      <div class="col-lg-6 col-md-12">
-        <div class="about-wrap">
-        <mat-card class="about">
-          <mat-card-header>
-            <mat-card-title>RACHEL WONG</mat-card-title>
-            <mat-card-subtitle style="letter-spacing: 0.1em;">Front End/Full Stack Developer</mat-card-subtitle>
-          </mat-card-header>
-          <mat-card-content>
-            <p>
-            I'm a passionate front end focused full stack developer with consulting experience, building web applications for many clients in various programming languages. 
-            </p>
-            <p>
-            I predominantly focus on React, JavaScript, Node, AWS, MongoDB and serverless. I love writing clean code and approach learning with an open and curious mind.
-            </p>
-          </mat-card-content>
-        </mat-card>
-      </div>
-    </div>
-
+      
   </div>
 </div>
 <app-competencies></app-competencies>

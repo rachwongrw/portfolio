@@ -22,4 +22,9 @@ a {
   color: inherit;
 }
 
+button {
+  border: none;
+  padding: 5px 15px;
+}
+
 /*# sourceMappingURL=main.css.map */

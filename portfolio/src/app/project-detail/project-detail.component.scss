@@ -4,4 +4,13 @@
   box-shadow: 20px 20px 0px 0px #f6e6eb;
   border-radius: 0;
   background: #FBF7F7;
+  margin: 0 auto;
+}
+
+.project-detail {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 2em; 
+  height: 80vh;
 }

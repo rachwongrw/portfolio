@@ -47,5 +47,6 @@ a {
 
 .about-img {
   filter: drop-shadow(10px 15px 10px rgba(0, 0, 0, 0.25));
-  width: 27em;
+  width: 100%;
+  max-width: 27em;
 }
