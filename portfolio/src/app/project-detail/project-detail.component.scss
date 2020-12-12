@@ -14,3 +14,9 @@
   margin: 0 2em; 
   height: 80vh;
 }
+
+@media (max-width: 576px) { 
+  .colour-square {
+    width: 100%;
+  }
+ }
