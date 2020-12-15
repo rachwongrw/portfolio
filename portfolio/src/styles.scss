@@ -13,10 +13,11 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
   margin: 0 !important;
 }
 
-a {
+a, a:hover {
   text-decoration: none;
   color: inherit;
 }
+
 
 button {
   border: none;

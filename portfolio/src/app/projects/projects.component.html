@@ -1,5 +1,6 @@
+<div id="projects"></div>
 <div class="h1-wrapper">
-  <h1 class="heading">PORTFOLIO PROJECTS</h1>
+  <h1 class="heading" >PORTFOLIO PROJECTS</h1>
 </div>
 
 <div class="row my-4 mx-0">
@@ -10,13 +11,12 @@
         <mat-card-subtitle>{{ project.tech }}</mat-card-subtitle>
       </mat-card-header>
       <img mat-card-image [src]="project.img" alt="project-screenshot" width="100">
-      <mat-card-content>
-        <p style="white-space: pre-line;" *ngIf="project.description.length < 200; else condensed"> {{ project.description }} </p>
+      <mat-card-content style="margin-top: 0.5em;" >
+        <p *ngIf="project.description.length < 200; else condensed"> {{ project.description }} </p>
         <ng-template #condensed>
           {{ project.description.slice(0, 200) }}...
       </ng-template>
       </mat-card-content>
-      
       <mat-card-actions>
         <a [routerLink]="['/project', project.id]">
           <button mat-button>READ MORE</button>
