@@ -28,6 +28,12 @@ a {
   background-repeat:no-repeat;
 }
 
+@media (max-width: 500px) {
+  .front-pg-wrapper {
+    background-size: 100%;
+  }
+}
+
 .mat-card-header .mat-card-title {
   margin-bottom: 12px;
   font-size: xx-large;
