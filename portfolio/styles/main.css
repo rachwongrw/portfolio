@@ -17,7 +17,7 @@ body {
   margin: 0 !important;
 }
 
-a {
+a, a:hover {
   text-decoration: none;
   color: inherit;
 }
